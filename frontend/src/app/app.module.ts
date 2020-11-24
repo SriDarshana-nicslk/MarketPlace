@@ -9,8 +9,8 @@ import { DataService } from "./shared/services/data.service";
 import { SyncService } from "./shared/services/sync.service";
 import { MarketModule } from "./market/market.module";
 // import { UserIdleModule } from "angular-user-idle";
-import { MDBBootstrapModule } from "angular-bootstrap-md";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { MDBBootstrapModule } from "angular-bootstrap-md"; //MDB
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap"; //angular-boostrap
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -20,7 +20,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     HttpClientModule,
     // UserIdleModule.forRoot({ idle: 300, timeout: 1, ping: 120 }),
     MarketModule, //since initial route component
-    // MDBBootstrapModule.forRoot(),
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [DataService, SyncService],
   schemas: [NO_ERRORS_SCHEMA],

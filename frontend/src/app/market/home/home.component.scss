@@ -1,9 +1,113 @@
-.banner {
-  width: 100vw;
-  height: 20vh;
-  background-color: #d5e288;
+.container {
 }
 .view {
-  height: 40vh;
-  width: 130vw;
+  height: 50vh;
+  // width: 130vw;
+}
+.banner {
+  // width: 102vw;
+  // margin-left: -12vw;
+  margin-top: -20px;
+}
+.search-custom {
+  // width: 70vw;
+  padding-left: 5vw;
+  margin-top: -15vh;
+  // padding-left: 50px;
+  // margin-top: -100px;
+}
+.expand-to-screen {
+  margin-left: -12vw;
+  width: 102vw;
+}
+.icon-search {
+  font-size: 20px;
+  background-color: aqua;
+  padding: 10px;
+}
+.logo {
+  margin-left: -10vw;
+  width: 170px;
+  height: 170px;
+}
+.mega-menu {
+  margin-top: 20vh;
+}
+//
+.active-pink-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type="text"] {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-purple-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-purple input[type="text"] {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-cyan-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan input[type="text"] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa,
+.active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+.active-purple .fa,
+.active-purple-2 .fa {
+  color: #ce93d8;
+}
+.active-pink .fa,
+.active-pink-2 .fa {
+  color: #f48fb1;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+//
+.rounded-circle {
+  width: 30px;
+}
+.toolbar {
+  // width: 1100px;
+  // width: 87vw;
+  // margin-left: 30px;
+  // margin-top: -14vh;
+}
+.breadcrumb-custom {
+  // margin-top: 100px;
+}
+.bk {
+  // background-color: blue;
+}
+.buyer-column {
+  width: 50%;
+  float: left;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 20px 0 20px;
+}
+.seller-column {
+  width: 50%;
+  float: right;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 20px 0 20px;
+}
+.join-with-us-column {
+  width: 100vw;
+  // margin-top: 20px;
+  float: right;
+}
+.category-panel {
+  margin-left: 5vw;
 }

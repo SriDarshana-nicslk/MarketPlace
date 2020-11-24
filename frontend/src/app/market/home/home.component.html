@@ -1,18 +1,165 @@
-
-
-
 <div class="container">
+  <div class="toolbar expand-to-screen">
+    <mdb-navbar
+      SideClass="navbar navbar-expand-lg navbar-dark purple lighten-1"
+      [containerInside]="false"
+    >
+      <mdb-navbar-brand>
+        <a class="navbar-brand" href="#"></a>        
+    </mdb-navbar-brand>
+      <links>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-light" mdbWavesEffect
+              >Home<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+          </li>
+
+          <li class="nav-item dropdown" dropdown>
+            <a
+              dropdownToggle
+              mdbWavesEffect
+              type="button"
+              class="nav-link dropdown-toggle waves-light"
+              mdbWavesEffect
+            >
+              Basic dropdown<span class="caret"></span
+            ></a>
+            <div
+              *dropdownMenu
+              class="dropdown-menu dropdown dropdown-primary"
+              role="menu"
+            >
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >Action</a
+              >
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >Another action</a
+              >
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >Something else here</a
+              >
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >Separated link</a
+              >
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link"
+              >1
+              <!-- <mdb-icon fas icon="envelope"></mdb-icon> -->
+            </a>
+          </li>
+          <li class="nav-item avatar dropdown" dropdown>
+            <a
+              dropdownToggle
+              mdbWavesEffect
+              type="button"
+              class="nav-link waves-light"
+              mdbWavesEffect
+            >
+              <img
+                src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                alt=""
+                class="img-fluid rounded-circle z-depth-0"
+            /></a>
+            <div
+              *dropdownMenu
+              class="dropdown-menu dropdown-menu-right dropdown dropdown-primary"
+              role="menu"
+            >
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >My account</a
+              >
+              <a class="dropdown-item waves-light" mdbWavesEffect href="#"
+                >Log out</a
+              >
+            </div>
+          </li>
+        </ul>
+      </links>
+    </mdb-navbar>
+  </div>
 
   <div>
-    <h1>Title</h1>
+    <a href="#">
+      <img
+        class="logo"
+        src="../../../assets/logo.png"
+        style="width: 10vw; height: 14vh"
+        alt="My logo"
+      />
+    </a>
   </div>
-  <div>
+
+  <div class="search-custom">
+    <form class="form-inline md-form form-sm active-purple-2">
+      <input
+        class="form-control form-control-sm mr-3 w-75"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+        mdbInput
+      />
+      <!-- <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon> -->
+    </form>
+  </div>
+
+  <div class="category-panel">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Fashion
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Heath & Beauty
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Electronics
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Sports
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Home & Living
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Art & Collectibles
+      </button>
+      <button type="button" class="btn purple-gradient btn-rounded">
+        Gifts
+      </button>
+    </div>
+  </div>
+
+  <div class="expand-to-screen breadcrumb-custom">
+    <nav aria-label="breadcrumb ">
+      <ol class="breadcrumb purple lighten-4">
+        <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
+        <li class="breadcrumb-item">
+          <a class="black-text" href="#">Library</a>
+        </li>
+        <li class="breadcrumb-item active">Data</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="banner expand-to-screen">
     <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
       <mdb-carousel-item>
         <div class="view w-100">
           <img
             class="d-block w-100"
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+            src="https://mdbootstrap.com/img/Photos/Slides/img%20(60).jpg"
             alt="First slide"
           />
           <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
@@ -29,10 +176,10 @@
             src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
             alt="Second slide"
           />
-          <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+          <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
         </div>
         <div class="carousel-caption">
-          <h3 class="h3-responsive">Strong mask</h3>
+          <h3 class="h3-responsive">slight mask</h3>
           <p>Secondary text</p>
         </div>
       </mdb-carousel-item>
@@ -40,7 +187,7 @@
         <div class="view w-100">
           <img
             class="d-block w-100"
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+            src="https://mdbootstrap.com/img/Photos/Slides/img%20(29).jpg"
             alt="Third slide"
           />
           <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
@@ -53,6 +200,189 @@
     </mdb-carousel>
   </div>
 
+  <div class="expand-to-screen">
+    <div
+      class="jumbotron card card-image"
+      style="
+        background-image: url(https://mdbootstrap.com/img/Photos/Others/forest2.jpg);
+      "
+    >
+      <div class="text-white text-center py-5 px-4">
+        <div>
+          <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+            <strong>What is Market Store?</strong>
+          </h2>
+          <div>
+            <div class="buyer-column">
+              <h3>For Buyers</h3>
+              <p>
+                FGgdugasgd ugsdu gsd u gudgucsgdcugsud csg ducgsdc giod hbbdc
+                ijsid cn isd ciugw ins hhs cnsi cdiknsncisb dchjsbkdcb sdvc
+                wiehsi ciks cihiskdcn ksh cksn ckbjdcks j cksdbnc sjdsbck
+                sjdhvcy vsjkncksbjcbjksndkcjs bikck,smcb jsnc
+              </p>
+            </div>
+            <div class="seller-column">
+              <h3>For Sellers</h3>
+              <p>
+                v csdcuyfwedh hohohdcohwlh cohodlc sidckbskdhciohkdhc hsidhc
+                isbdcj skcbkbsiucdikwbik ydsucbk sidcu ufgc c sdhcgdyc ijldkc
+                gsijdiuwg8edwegf di i giged ydfwugdwh id iwd u gud wueudw uw f
+                wede dg ie fuwegdhwh do wekwlbdgigwoedl go guwegdi w hiedhwi
+                edow iodwoh wh cfwgfchwef oweihfo wef owefow e ve udkdsc iscg
+                sdicbksc
+                decndnlk lkdsncl sdlc lskdc lskmdlck sdc
+                sbdcb sid cnijsndcjn sdc sbdcubc d cudc
+                hb dicdchid chduchdi cidc idc idc ndijfcec d ckidhc iejnc
+              </p>
+            </div>
+          </div>
+          <div class="join-with-us-column">
+            <div class="left-column"><h4>Join with us today</h4></div>
+            <div class="right-column"><a class="btn btn-outline-white btn-md"
+              ><i class="fas fa-clone center"></i> Register</a
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <button type="button" class="btn btn-primary">sss</button>
+  <div class="expand-to-screen">
+    <footer class="page-footer font-small mdb-color pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Market Place</h6>
+            <p>
+              Here you can use rows and columns here to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="#!">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!">Bootstrap Angular</a>
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!">Your Account</a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>
+              <!-- <mdb-icon fas icon="home" class="mr-3"></mdb-icon> -->
+              New York, NY 10012, US
+            </p>
+            <p>
+              <!-- <mdb-icon fas icon="envelope" class="mr-3"></mdb-icon> -->
+              info@example.com
+            </p>
+            <p>
+              <!-- <mdb-icon fas icon="phone" class="mr-3"></mdb-icon> -->
+              + 01 234 567 88
+            </p>
+            <p>
+              <!-- <mdb-icon fas icon="print" class="mr-3"></mdb-icon> -->
+              + 01 234 567 88
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">
+              © 2020 Copyright:
+              <a href="https://mdbootstrap.com/">
+                <strong> marketplace.com</strong>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    mdbBtn
+                    floating="true"
+                    size="sm"
+                    class="rgba-white-slight mx-1"
+                    mdbWavesEffect
+                  >
+                    <!-- <mdb-icon fab icon="facebook"></mdb-icon> -->
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    mdbBtn
+                    floating="true"
+                    size="sm"
+                    class="rgba-white-slight mx-1"
+                    mdbWavesEffect
+                  >
+                    <!-- <mdb-icon fab icon="twitter"></mdb-icon> -->
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    mdbBtn
+                    floating="true"
+                    size="sm"
+                    class="rgba-white-slight mx-1"
+                    mdbWavesEffect
+                  >
+                    <!-- <mdb-icon fab fab icon="google-plus"></mdb-icon> -->
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    mdbBtn
+                    floating="true"
+                    size="sm"
+                    class="rgba-white-slight mx-1"
+                    mdbWavesEffect
+                  >
+                    <!-- <mdb-icon fab icon="linkedin"></mdb-icon> -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </div>
